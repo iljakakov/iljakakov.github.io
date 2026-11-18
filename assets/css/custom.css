@@ -1,0 +1,256 @@
+/* ===== 2. ŠRIFTAI (Typography) ===== */
+
+/* a. Nauji šriftai iš Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Nunito:wght@400;600&display=swap');
+
+:root {
+  --default-font: "Nunito", sans-serif;
+  --heading-font: "Orbitron", sans-serif;
+  --nav-font: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* b. Antraštės h1–h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #4fc3f7;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4fc3f7;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a78bfa;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+/* Sekcijų pavadinimai (Apie, Paslaugos, Portfelis...) */
+.section-title h2 {
+  font-size: 44px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #4fc3f7;
+}
+
+/* c. Pastraipos */
+p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #d0dde3;
+}
+
+/* ===== 3. MYGTUKAI IR NUORODOS ===== */
+
+/* a. Mygtukai */
+.btn,
+.btn-ghost,
+.hero .hero-actions .btn,
+.about .intro-content .cta-group .btn-ghost,
+.php-email-form button[type=submit] {
+  background: linear-gradient(135deg, #7c3aed, #1387c1);
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Užvedus pelę (:hover) – pakyla ir pašviesėja */
+.btn:hover,
+.btn-ghost:hover,
+.hero .hero-actions .btn:hover,
+.about .intro-content .cta-group .btn-ghost:hover,
+.php-email-form button[type=submit]:hover {
+  background: linear-gradient(135deg, #a78bfa, #4fc3f7);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(79, 195, 247, 0.5);
+}
+
+/* Paspaudus (:active) – nusileidžia žemyn */
+.btn:active,
+.btn-ghost:active,
+.hero .hero-actions .btn:active,
+.about .intro-content .cta-group .btn-ghost:active,
+.php-email-form button[type=submit]:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
+}
+
+/* b. Nuorodos */
+a {
+  color: #a78bfa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #4fc3f7;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+/* Paslaugų „Plačiau“ nuorodos */
+.services .service-link {
+  color: #a78bfa;
+}
+
+.services .service-link:hover {
+  color: #4fc3f7;
+  letter-spacing: 1px;
+}
+
+/* ===== 4. IŠDĖSTYMAS: MARGIN IR PADDING ===== */
+
+/* a. Didesni tarpai skiltyse „Apie“, „Patirtis“, „Atlikti darbai“ */
+.about.section,
+.skills.section,
+.resume.section,
+.portfolio.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Tarpas po sekcijos pavadinimu */
+.section-title {
+  margin-bottom: 50px;
+}
+
+/* „Apie“: tarpai tarp teksto ir paveikslėlio */
+.about .intro-content p {
+  margin-bottom: 25px;
+}
+
+/* „Patirtis“: tarpai tarp įrašų */
+.resume .resume-item {
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+/* ===== 4b. BLOKŲ IŠVAIZDA: RĖMELIAI, UŽAPVALINIMAS, ŠEŠĖLIAI ===== */
+
+/* Įgūdžių kortelės („Apie“) */
+.skills .skill-box {
+  padding: 30px;
+  border: 1px solid rgba(124, 58, 237, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Patirties blokai */
+.resume .resume-item {
+  border-left: 4px solid #7c3aed;
+  border-radius: 15px;
+  background-color: #141f26;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Portfelio kortelės */
+.portfolio-card {
+  border: 1px solid rgba(79, 195, 247, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Portfelio kortelės vienodo aukščio */
+.portfolio-card .portfolio-img img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background-color: #1e1e1e;
+}
+
+.portfolio-card .portfolio-info {
+  min-height: 230px;
+}
+
+/* Paslaugų kortelės */
+.services .service-item {
+  border: 1px solid rgba(124, 58, 237, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Paveikslėlis „Apie“ skiltyje */
+.about .profile-figure .profile-photo {
+  border-radius: 25px;
+  border: 3px solid #7c3aed;
+  box-shadow: 0 10px 35px rgba(124, 58, 237, 0.5);
+}
+/* ===== 5. KOMPONENTŲ STILIUS ===== */
+
+/* 1 komponentas: navigacijos juosta */
+.header {
+  background-color: rgba(11, 16, 32, 0.95) !important;
+  border-bottom: 2px solid #7c3aed;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+}
+
+.navmenu a,
+.navmenu a:focus {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navmenu li:hover > a,
+.navmenu .active,
+.navmenu .active:focus {
+  color: #a78bfa !important;
+}
+
+/* 2 komponentas: progreso juostos (Įgūdžiai) */
+.skills .skill-box .progress {
+  height: 12px;
+  background-color: #1e2a38;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skills .skill-box .progress .progress-bar {
+  background: linear-gradient(90deg, #7c3aed, #4fc3f7);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(79, 195, 247, 0.6);
+}
