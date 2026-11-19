@@ -79,7 +79,7 @@ p {
 .hero .hero-actions .btn,
 .about .intro-content .cta-group .btn-ghost,
 .php-email-form button[type=submit] {
-  background: linear-gradient(135deg, #7c3aed, #1387c1);
+  background: linear-gradient(135deg, #7c3aed, #0369a1);
   color: #ffffff !important;
   border: none !important;
   border-radius: 30px;
@@ -89,13 +89,14 @@ p {
   transition: all 0.3s ease;
 }
 
-/* Užvedus pelę (:hover) – pakyla ir pašviesėja */
+/* Užvedus pelę (:hover) – pakyla, pašviesėja, tekstas tamsus (kontrastas) */
 .btn:hover,
 .btn-ghost:hover,
 .hero .hero-actions .btn:hover,
 .about .intro-content .cta-group .btn-ghost:hover,
 .php-email-form button[type=submit]:hover {
   background: linear-gradient(135deg, #a78bfa, #4fc3f7);
+  color: #0b1020 !important;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(79, 195, 247, 0.5);
 }
@@ -219,29 +220,17 @@ a:active {
   border: 3px solid #7c3aed;
   box-shadow: 0 10px 35px rgba(124, 58, 237, 0.5);
 }
+
 /* ===== 5. KOMPONENTŲ STILIUS ===== */
 
-/* 1 komponentas: navigacijos juosta */
+/* 1 komponentas: navigacijos juosta (fonas, rėmelis, šešėlis) */
 .header {
   background-color: rgba(11, 16, 32, 0.95) !important;
   border-bottom: 2px solid #7c3aed;
   box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
 }
 
-.navmenu a,
-.navmenu a:focus {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.navmenu li:hover > a,
-.navmenu .active,
-.navmenu .active:focus {
-  color: #a78bfa !important;
-}
-
-/* 2 komponentas: progreso juostos (Įgūdžiai) */
+/* 2 komponentas: progreso juostos (aukštis, fonas, užapvalinimas, gradientas, švytėjimas) */
 .skills .skill-box .progress {
   height: 12px;
   background-color: #1e2a38;
@@ -253,4 +242,19 @@ a:active {
   background: linear-gradient(90deg, #7c3aed, #4fc3f7);
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(79, 195, 247, 0.6);
+}
+
+/* 3 komponentas: „Į viršų“ mygtukas (forma, fonas, rėmelis, šešėlis) */
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #0369a1);
+  border: 2px solid #4fc3f7;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.6);
+}
+
+.scroll-top i {
+  color: #ffffff;
+  font-size: 28px;
 }
