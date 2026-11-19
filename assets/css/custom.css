@@ -1,5 +1,4 @@
-/* ===== 2. ŠRIFTAI (Typography) ===== */
-
+/*2 ŠRIFTAI*/
 /* a. Nauji šriftai iš Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Nunito:wght@400;600&display=swap');
 
@@ -71,8 +70,7 @@ p {
   color: #d0dde3;
 }
 
-/* ===== 3. MYGTUKAI IR NUORODOS ===== */
-
+/* 3 MYGTUKAI IR NUORODOS */
 /* a. Mygtukai */
 .btn,
 .btn-ghost,
@@ -137,8 +135,7 @@ a:active {
   letter-spacing: 1px;
 }
 
-/* ===== 4. IŠDĖSTYMAS: MARGIN IR PADDING ===== */
-
+/* 4. IŠDĖSTYMAS: MARGIN IR PADDING  */
 /* a. Didesni tarpai skiltyse „Apie“, „Patirtis“, „Atlikti darbai“ */
 .about.section,
 .skills.section,
@@ -164,8 +161,7 @@ a:active {
   padding: 30px;
 }
 
-/* ===== 4b. BLOKŲ IŠVAIZDA: RĖMELIAI, UŽAPVALINIMAS, ŠEŠĖLIAI ===== */
-
+/*4b. BLOKŲ IŠVAIZDA: RĖMELIAI, UŽAPVALINIMAS, ŠEŠĖLIAI  */
 /* Įgūdžių kortelės („Apie“) */
 .skills .skill-box {
   padding: 30px;
@@ -334,7 +330,6 @@ a:active {
 }
 
 /* 2 lentele */
-
 /* a. Antraštinė eilutė */
 .services .table thead th {
   background-color: #5b21b6;
