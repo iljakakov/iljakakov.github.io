@@ -258,3 +258,112 @@ a:active {
   color: #ffffff;
   font-size: 28px;
 }
+
+/*papildoma uzduotis */
+/* 1 sarasai*/
+/* a. Nenumeruotas sąrašas – savas ženklelis (pseudo-elementas ::before) */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.services ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #4fc3f7;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* a. Numeruotas sąrašas – skaitikliai (counters) */
+.services ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: etapas;
+}
+
+.services ol li {
+  counter-increment: etapas;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  min-height: 34px;
+  line-height: 34px;
+}
+
+.services ol li::before {
+  content: counter(etapas);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #0369a1);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* b. Įdėtinis sąrašas – kitokia išvaizda */
+.services ul ul {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-left: 2px dashed #a78bfa;
+  background-color: rgba(124, 58, 237, 0.1);
+  border-radius: 8px;
+}
+
+.services ul ul li {
+  font-size: 15px;
+  font-style: italic;
+  color: #c4b5fd;
+}
+
+.services ul ul li::before {
+  content: "–";
+  color: #a78bfa;
+}
+
+/* 2 lentele */
+
+/* a. Antraštinė eilutė */
+.services .table thead th {
+  background-color: #5b21b6;
+  border-bottom: 3px solid #4fc3f7;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* c. Vienodi vidiniai tarpai ir lygiavimas centre */
+.services .table th,
+.services .table td {
+  padding: 15px 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* b. „Zebra“ stilius */
+.services .table tbody tr:nth-child(odd) td {
+  background-color: #141f26;
+}
+
+.services .table tbody tr:nth-child(even) td {
+  background-color: #1e2a38;
+}
+
+/* b. Eilutės :hover efektas */
+.services .table tbody tr:hover td {
+  background-color: #2e1f5e;
+  color: #ffffff;
+}
