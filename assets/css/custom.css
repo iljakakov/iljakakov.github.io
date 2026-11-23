@@ -1,5 +1,5 @@
 /*2 sriftai*/
-/* a. Nauji šriftai iš Google Fonts */
+/* a šriftai */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Nunito:wght@400;600&display=swap');
 
 :root {
@@ -55,7 +55,7 @@ h6 {
   color: #cccccc;
 }
 
-/* Sekcijų pavadinimai */
+/* sekcijų pavadinimai */
 .section-title h2 {
   font-size: 44px;
   font-weight: 800;
@@ -63,7 +63,7 @@ h6 {
   color: #4fc3f7;
 }
 
-/* c. Pastraipos */
+/* c pastraipos */
 p {
   font-size: 17px;
   line-height: 1.8;
@@ -71,7 +71,7 @@ p {
 }
 
 /* 3 mygtukai ir nuorodos */
-/* a. Mygtukai */
+/* a mygtukai */
 .btn,
 .btn-ghost,
 .hero .hero-actions .btn,
@@ -87,7 +87,7 @@ p {
   transition: all 0.3s ease;
 }
 
-/* Užvedus pelę */
+/* uzvedus pele */
 .btn:hover,
 .btn-ghost:hover,
 .hero .hero-actions .btn:hover,
@@ -99,7 +99,7 @@ p {
   box-shadow: 0 8px 25px rgba(79, 195, 247, 0.5);
 }
 
-/* Paspaudus*/
+/* paspaudus*/
 .btn:active,
 .btn-ghost:active,
 .hero .hero-actions .btn:active,
@@ -109,7 +109,7 @@ p {
   box-shadow: 0 2px 8px rgba(124, 58, 237, 0.4);
 }
 
-/* b. Nuorodos */
+/* b. nuorodos */
 a {
   color: #a78bfa;
   text-decoration: none;
@@ -125,7 +125,7 @@ a:active {
   color: #ffffff;
 }
 
-/* Paslaugų „Plačiau“ nuorodos */
+/* paslaugų plačiau nuorodos */
 .services .service-link {
   color: #a78bfa;
 }
@@ -136,7 +136,7 @@ a:active {
 }
 
 /* 4. padding ir margin  */
-/* a. Didesni tarpai skiltyse „Apie“, „Patirtis“, „Atlikti darbai“ */
+/* a. didesni tarpai skiltyse „Apie“, „Patirtis“, „Atlikti darbai“ */
 .about.section,
 .skills.section,
 .resume.section,
@@ -145,24 +145,24 @@ a:active {
   padding-bottom: 90px;
 }
 
-/* Tarpas po sekcijos pavadinimu */
+/* tarpas po sekcijos pavadinimu */
 .section-title {
   margin-bottom: 50px;
 }
 
-/* „Apie“: tarpai tarp teksto ir paveikslėlio */
+/* „apie“: tarpai tarp teksto ir paveikslėlio */
 .about .intro-content p {
   margin-bottom: 25px;
 }
 
-/* „Patirtis“: tarpai tarp įrašų */
+/* „patirtis“: tarpai tarp įrašų */
 .resume .resume-item {
   margin-bottom: 40px;
   padding: 30px;
 }
 
 /*4b*/
-/* Įgūdžių kortelės („Apie“) */
+/* igūdžių kortelės Apie */
 .skills .skill-box {
   padding: 30px;
   border: 1px solid rgba(124, 58, 237, 0.5);
@@ -170,7 +170,7 @@ a:active {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Patirties blokai */
+/* patirties blokai */
 .resume .resume-item {
   border-left: 4px solid #7c3aed;
   border-radius: 15px;
@@ -178,7 +178,7 @@ a:active {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Portfelio kortelės */
+/* portfelio kortelės */
 .portfolio-card {
   border: 1px solid rgba(79, 195, 247, 0.4);
   border-radius: 20px;
@@ -191,7 +191,7 @@ a:active {
   transform: translateY(-6px);
 }
 
-/* Portfelio kortelės vienodo aukščio */
+/* portfelio kortelės vienodo aukščio */
 .portfolio-card .portfolio-img img {
   width: 100%;
   height: 230px;
@@ -203,14 +203,14 @@ a:active {
   min-height: 230px;
 }
 
-/* Paslaugų kortelės */
+/* paslaugų kortelės */
 .services .service-item {
   border: 1px solid rgba(124, 58, 237, 0.5);
   border-radius: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* Paveikslėlis „Apie“ skiltyje */
+/* paveikslėlis Apie“ skiltyje */
 .about .profile-figure .profile-photo {
   border-radius: 25px;
   border: 3px solid #7c3aed;
@@ -218,7 +218,6 @@ a:active {
 }
 
 /*5 komponentų stiliai */
-
 /* 1 komponentas: navigacijos  (fonas, rėmelis, šešėlis) */
 .header {
   background-color: rgba(11, 16, 32, 0.95) !important;
@@ -257,7 +256,6 @@ a:active {
 
 /*papildoma uzduotis */
 /* 1 sarasai*/
-/* a. Nenumeruotas sąrašas – savas ženklelis (pseudo-elementas ::before) */
 .services ul {
   list-style: none;
   padding-left: 0;
@@ -278,7 +276,7 @@ a:active {
   line-height: 1.2;
 }
 
-/* a. Numeruotas sąrašas – skaitikliai (counters) */
+/* a. Numeruotas sąrašas */
 .services ol {
   list-style: none;
   padding-left: 0;
@@ -309,7 +307,7 @@ a:active {
   font-weight: 700;
 }
 
-/* b. Įdėtinis sąrašas – kitokia išvaizda */
+/* b */
 .services ul ul {
   margin-top: 10px;
   padding: 10px 15px;
