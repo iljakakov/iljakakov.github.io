@@ -435,15 +435,13 @@ a:active {
     opacity: 1;
   }
 }
-/* ----- 3. Dekoratyviniai pseudo-elementai sekcijų antraštėms ----- */
-
-/* Antraštė tampa „atrama“ pseudo-elementams */
+/* 3*/
+/* Antraštė  */
 .section-title h2 {
   position: relative;
   display: inline-block;
 }
-
-/* a. ::before – mažas besisukantis rombas kairėje nuo antraštės */
+/* a.*/
 .section-title h2::before {
   content: "";
   position: absolute;
@@ -455,8 +453,7 @@ a:active {
   background: linear-gradient(135deg, #7c3aed, #4fc3f7);
   animation: rombasSukasi 3s linear infinite;
 }
-
-/* a. ::after – švytinti linija po antrašte */
+/* a. after*/
 .section-title h2::after {
   content: "";
   position: absolute;
@@ -469,8 +466,7 @@ a:active {
   transform: translateX(-50%);
   animation: linijaBanguoja 2.5s ease-in-out infinite;
 }
-
-/* b. Pseudo-elementų animacijos */
+/* b pseudo elementų animacijos */
 @keyframes rombasSukasi {
   0% {
     transform: rotate(0deg);
@@ -485,7 +481,6 @@ a:active {
     opacity: 0.6;
   }
 }
-
 @keyframes linijaBanguoja {
   0% {
     width: 40%;
@@ -498,5 +493,29 @@ a:active {
   100% {
     width: 40%;
     opacity: 0.5;
+  }
+}
+/* ----- 4. Animacijos netrukdo turiniui ir funkcionalumui ----- */
+
+/* Dekoratyviniai elementai nereaguoja į pelę – netrukdo spausti nuorodų ir mygtukų */
+.section-title h2::before,
+.section-title h2::after,
+.krovimas {
+  pointer-events: none;
+}
+
+/* Užvedus pelę ant pagrindinio paveikslėlio, animacija sustoja */
+.hero .hero-image .image-wrapper img:hover {
+  animation-play-state: paused;
+}
+
+/* Jei naudotojas sistemoje išjungė animacijas – jos neberodomos */
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-image .image-wrapper img,
+  .about .profile-figure .profile-photo,
+  .krovimas span,
+  .section-title h2::before,
+  .section-title h2::after {
+    animation: none;
   }
 }
